@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Wu | IT Professional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .brand-font {
+      font-family: 'Playfair+Display', serif;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+    .nav-link {
+      transition: color 0.3s ease;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .btn {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-sm shadow-sm z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <a href="#" class="text-2xl font-bold text-gray-800 brand-font">Daniel Wu</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#summary" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Summary</a>
+            <a href="#skills" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+            <a href="#experience" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+            <a href="#education" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Education</a>
+            <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="pt-24 pb-16 bg-gradient-to-r from-gray-50 to-gray-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- NOTE: Replace 'profile.jpg' with your photo, or leave it for the initials avatar -->
+      <img src="profile.jpg" alt="Daniel Wu" class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg mb-4 object-cover" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="w-32 h-32 mx-auto rounded-full bg-indigo-600 text-white items-center justify-center text-5xl font-bold mb-4 hidden">DW</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 brand-font">DiChao (Daniel) Wu</h1>
+      <p class="mt-2 text-xl text-indigo-600 font-semibold">Senior IT Professional & Team Leader</p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Summary Section -->
+    <section id="summary" class="py-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-6">Summary</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Highly accomplished IT professional with over 10 years of experience in IT operations, system administration, and team leadership. Proven track record in designing, implementing, and managing complex IT systems, automating processes, and ensuring operational excellence. Adept at leading cross-functional teams, driving efficiency through automation, and enhancing security postures. Seeking a senior team leader role where I can leverage my technical expertise and strategic vision to optimize IT operations and deliver business value.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-white rounded-lg">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-10">Technical Skills</h2>
+            <div class="flex flex-wrap justify-center gap-3 text-sm font-medium">
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">PowerShell Automation</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Arcon PAM & Delinea</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">PingFederate & Oracle IAM</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Microsoft Entra ID & Intune</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Windows Autopilot</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Windows Server Admin</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">ServiceNow</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Jira & Confluence</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Power BI & Tableau</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">Splunk, Bitbucket & Bamboo</span>
+                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">iManage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-16">
+      <h2 class="text-3xl md:text-4xl section-title text-gray-800 text-center mb-12">Professional Experience</h2>
+      <div class="space-y-12">
+        
+        <div class="card p-6 md:p-8">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Senior Identity Engineer</h3>
+              <p class="text-md font-semibold text-indigo-600">TAFE NSW</p>
+            </div>
+            <p class="text-sm text-gray-500">Nov 2024 – Present</p>
+          </div>
+          <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+            <li>Automated critical IT processes using PowerShell, resulting in a <strong>30% increase in operational efficiency</strong>.</li>
+            <li>Spearheaded strategic planning and enhancement of IAM software, achieving <strong>99.9% system uptime</strong>.</li>
+            <li>Provided expert guidance and mentorship to Identity Administrators and business stakeholders.</li>
+            <li>Monitored system performance and implemented proactive measures, <strong>reducing system downtime by 15%</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="card p-6 md:p-8">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Senior Application Operations Analyst</h3>
+              <p class="text-md font-semibold text-indigo-600">Clyde & Co</p>
+            </div>
+            <p class="text-sm text-gray-500">Nov 2021 – Aug 2024</p>
+          </div>
+          <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+            <li>Administered Microsoft Intune for 600+ devices, implementing MDM/MAM policies that <strong>reduced security incidents by 20%</strong>.</li>
+            <li>Deployed and managed Microsoft Entra ID, strengthening the organization’s security posture by <strong>50%</strong>.</li>
+            <li>Served as the primary technical lead for APAC during the iManage cloud migration project.</li>
+          </ul>
+        </div>
+
+        <div class="card p-6 md:p-8">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">IT Service Engineer</h3>
+              <p class="text-md font-semibold text-indigo-600">Sonic Healthcare</p>
+            </div>
+            <p class="text-sm text-gray-500">Aug 2021 – Nov 2021</p>
+          </div>
+          <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+            <li>Implemented Veeam backup solutions, achieving an RTO of 4 hours and RPO of 1 hour.</li>
+            <li>Led the migration of ten years of ticketing data to ServiceNow with <strong>100% data integrity</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="card p-6 md:p-8">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">Infrastructure Services Engineer</h3>
+              <p class="text-md font-semibold text-indigo-600">AIG Australia</p>
+            </div>
+            <p class="text-sm text-gray-500">Jun 2018 – Aug 2021</p>
+          </div>
+          <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+            <li>Designed Windows Autopilot profiles, <strong>reducing device deployment time by 60%</strong>.</li>
+            <li>Directed the migration of 400 users from Windows 7 to Windows 10 with <strong>zero business disruption</strong>.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white rounded-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-6">Education</h2>
+            <div class="inline-block text-left">
+                <h3 class="text-xl font-bold text-gray-900">University of Newcastle</h3>
+                <p class="text-md font-semibold text-indigo-600">Master of Business Administration & Information Technology</p>
+                <p class="text-sm text-gray-500 mt-1">Graduated July 2014</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section id="resume-download" class="py-16 text-center">
+        <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-6">My Resume</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 mb-8">
+            For a more detailed look at my qualifications and experience, please download the full PDF version of my resume.
+        </p>
+        <a href="DanielWu_Resume.pdf" download="DanielWu_Resume.pdf" class="btn inline-block px-8 py-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700">
+            <i class="fas fa-download mr-2"></i> Download Resume (PDF)
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white rounded-lg">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl section-title mb-8">Get In Touch</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+          <a href="mailto:dichao.wu@icloud.com" class="flex items-center gap-3 hover:text-indigo-300 transition-colors">
+            <i class="fas fa-envelope text-2xl"></i>
+            <span class="text-lg">dichao.wu@icloud.com</span>
+          </a>
+          <a href="tel:0410186216" class="flex items-center gap-3 hover:text-indigo-300 transition-colors">
+            <i class="fas fa-phone text-2xl"></i>
+            <span class="text-lg">0410 186 216</span>
+          </a>
+          <a href="https://www.linkedin.com/in/danielwuaustralia/" target="_blank" class="flex items-center gap-3 hover:text-indigo-300 transition-colors">
+            <i class="fab fa-linkedin text-2xl"></i>
+            <span class="text-lg">LinkedIn Profile</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-8">
+    <p>© 2025 DiChao (Daniel) Wu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
