@@ -1,268 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Wu | Senior IT Professional & Team Leader</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DiChao (Daniel) Wu | Senior Domain Architect</title>
+  <meta
+    name="description"
+    content="DiChao (Daniel) Wu is a Senior Domain Architect and IAM specialist with 10+ years of experience across enterprise solution architecture, cloud, infrastructure, cybersecurity, endpoint management, and automation."
+  />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#4f46e5" />
   <meta name="google-site-verification" content="Ylo7sqxngg2gecG2DorSIF-KFmbx_iSNYv-CkAzNPSc" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DiChao (Daniel) Wu | Senior Domain Architect" />
+  <meta
+    property="og:description"
+    content="Senior Domain Architect and IAM specialist with expertise in enterprise architecture, Microsoft Entra ID, cloud, infrastructure, and automation."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DiChao (Daniel) Wu | Senior Domain Architect" />
+  <meta
+    name="twitter:description"
+    content="Senior Domain Architect and IAM specialist with expertise in enterprise architecture, cloud, infrastructure, and automation."
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: "#eef2ff",
+              100: "#e0e7ff",
+              500: "#6366f1",
+              600: "#4f46e5",
+              700: "#4338ca",
+              900: "#312e81"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(15, 23, 42, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: Arial, sans-serif; 
-      background-color: #f8f9fa;
-      color: #343a40;
-    }
-    .section-title {
-      font-weight: 700;
-    }
-    .nav-link {
-      transition: color 0.3s ease;
+      font-family: Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
     }
     .card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
       border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.09);
+    }
+    .section-title {
+      letter-spacing: -0.02em;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 9999px;
+      padding: 0.55rem 0.9rem;
+      background: #eef2ff;
+      color: #312e81;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .skip-link {
+      position: absolute;
+      left: 1rem;
+      top: -100px;
+      background: #111827;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      z-index: 100;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 1rem;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -0.6rem;
+      top: 0.4rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: #4f46e5;
+      border-radius: 9999px;
+      box-shadow: 0 0 0 4px #e0e7ff;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card { transition: none; }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"DiChao (Daniel) Wu",
+    "jobTitle":"Senior Domain Architect",
+    "email":"mailto:dichao.wu@icloud.com",
+    "telephone":"0410 186 216",
+    "url":"https://github.com/",
+    "sameAs":["https://www.linkedin.com/in/danielwuaustralia/"],
+    "alumniOf":{
+      "@type":"CollegeOrUniversity",
+      "name":"University of Newcastle"
+    }
+  }
+  </script>
 </head>
 <body class="antialiased">
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-sm shadow-sm z-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex-shrink-0">
-          <a href="#" class="text-2xl font-bold text-gray-800">Daniel Wu</a>
-        </div>
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-4">
-            <a href="#about" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
-            <a href="#skills" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
-            <a href="#experience" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
-            <a href="#education" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Education</a>
-            <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-          </div>
-        </div>
+  <nav class="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#top" class="text-xl font-bold tracking-tight text-slate-900">Daniel Wu</a>
+
+      <button
+        id="menuBtn"
+        class="inline-flex items-center justify-center rounded-lg border border-slate-300 p-2 text-slate-700 md:hidden"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div class="hidden items-center gap-1 md:flex">
+        <a href="#about" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-600">About</a>
+        <a href="#skills" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-600">Skills</a>
+        <a href="#experience" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-600">Experience</a>
+        <a href="#education" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-600">Education</a>
+        <a href="#contact" class="rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-600">Contact</a>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white md:hidden">
+      <div class="space-y-1 px-4 py-3">
+        <a href="#about" class="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">About</a>
+        <a href="#skills" class="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Skills</a>
+        <a href="#experience" class="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Experience</a>
+        <a href="#education" class="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Education</a>
+        <a href="#contact" class="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="pt-24 pb-16 bg-gradient-to-r from-gray-50 to-gray-100">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <img src="profile.jpg" alt="Daniel Wu" class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg mb-4 object-cover" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='flex'">
-      <div class="w-32 h-32 mx-auto rounded-full bg-indigo-600 text-white items-center justify-center text-5xl font-bold mb-4 hidden">DW</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900">DiChao (Daniel) Wu</h1>
-      <p class="mt-2 text-xl text-indigo-600 font-semibold">Senior IT Professional & Team Leader</p>
+  <!-- Hero -->
+  <header id="top" class="bg-gradient-to-br from-slate-50 via-white to-brand-50 pt-28 pb-16 sm:pt-32 sm:pb-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div>
+          <span class="mb-4 inline-flex rounded-full border border-brand-100 bg-brand-50 px-4 py-1.5 text-sm font-semibold text-brand-700">
+            Senior Domain Architect • IAM Specialist
+          </span>
+          <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            DiChao (Daniel) Wu
+          </h1>
+          <p class="mt-4 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
+            Results-driven Senior Domain Architect with 10+ years of experience across enterprise solution architecture,
+            ICT infrastructure, cloud migration, endpoint management, cybersecurity, and PowerShell automation.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="DanielWu_Resume.docx"
+              download="DanielWu_Resume.docx"
+              class="inline-flex items-center rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white shadow-soft transition hover:bg-brand-700"
+            >
+              Download Resume
+            </a>
+            <a
+              href="#experience"
+              class="inline-flex items-center rounded-lg border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:border-brand-300 hover:text-brand-700"
+            >
+              View Experience
+            </a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="pill">Solution Architecture</span>
+            <span class="pill">Microsoft Entra ID</span>
+            <span class="pill">Cloud & Infrastructure</span>
+            <span class="pill">PowerShell Automation</span>
+            <span class="pill">Cybersecurity & IAM</span>
+          </div>
+        </div>
+
+        <div class="flex justify-center lg:justify-end">
+          <div class="relative">
+            <img
+              src="profile.jpg"
+              alt="Portrait of DiChao (Daniel) Wu"
+              class="h-44 w-44 rounded-3xl border-4 border-white object-cover shadow-soft sm:h-56 sm:w-56"
+              loading="eager"
+              onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';"
+            />
+            <div
+              id="avatarFallback"
+              class="hidden h-44 w-44 items-center justify-center rounded-3xl bg-brand-600 text-5xl font-bold text-white shadow-soft sm:h-56 sm:w-56 sm:text-6xl"
+              aria-hidden="true"
+            >
+              DW
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    
-    <!-- About Section -->
-    <section id="about" class="py-16">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-6">About Me</h2>
-        <p class="text-lg text-gray-700 leading-relaxed">
-          A results-driven IT leader with over 10 years of experience steering IT operations, automating complex processes, and strengthening security infrastructure. I specialize in Identity and Access Management (IAM), Microsoft Entra & Intune administration, and leading high-performing teams through critical digital transformation projects. My career is defined by a proven ability to enhance operational efficiency, reduce risk, and mentor teams to achieve technical excellence and align with strategic business goals.
+  <main id="main-content" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <!-- About -->
+    <section id="about" class="py-12 sm:py-16">
+      <div class="mx-auto max-w-4xl text-center">
+        <h2 class="section-title text-3xl font-bold text-slate-900 sm:text-4xl">About Me</h2>
+        <p class="mt-6 text-lg leading-8 text-slate-700">
+          I’m a Senior Domain Architect and IAM specialist with more than 10 years of experience delivering secure,
+          scalable technology solutions across enterprise architecture, ICT infrastructure, cloud hosting, endpoint
+          management, and cybersecurity. I translate business requirements into practical solution designs, high-level
+          and low-level architectures, and technology roadmaps aligned to governance frameworks, operational standards,
+          and strategic outcomes.
         </p>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-white rounded-lg card">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-10 text-center">Skills</h2>
-            
-            <h3 class="text-xl font-bold text-center text-gray-700 mb-6">Core Competencies</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 mb-12 text-center">
-                <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-md"><p class="font-semibold">Identity & Access Management</p></div>
-                <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-md"><p class="font-semibold">Process Automation (PowerShell)</p></div>
-                <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-md"><p class="font-semibold">Team Leadership & Mentoring</p></div>
-                <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-md"><p class="font-semibold">Agile Project Management</p></div>
-                <div class="bg-indigo-600 text-white p-4 rounded-lg shadow-md"><p class="font-semibold">IT Service Management (ITSM)</p></div>
-            </div>
+    <!-- Skills -->
+    <section id="skills" class="py-12 sm:py-16">
+      <div class="card px-6 py-10 sm:px-8">
+        <h2 class="section-title text-center text-3xl font-bold text-slate-900 sm:text-4xl">Core Skills</h2>
 
-            <h3 class="text-xl font-bold text-center text-gray-700 mb-6">Technical Proficiencies</h3>
-            <div class="flex flex-wrap justify-center gap-3 text-sm font-medium">
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">PowerShell</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Microsoft Entra ID & Intune</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Windows Autopilot</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Windows Server</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">ServiceNow & Cherwell</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Jira & Confluence</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Arcon PAM & Delinea</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Veeam Backup</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Splunk</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Power BI & Tableau</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">iManage</span>
-                <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">WordPress & HTML5</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Experience Section -->
-    <section id="experience" class="py-16">
-      <h2 class="text-3xl md:text-4xl section-title text-gray-800 text-center mb-12">Professional Experience</h2>
-      <div class="max-w-4xl mx-auto space-y-8">
-        
-        <!-- TAFE NSW -->
-        <div class="card p-6 md:p-8 flex flex-col sm:flex-row gap-6">
-          <div class="flex-shrink-0">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQFuqlpWKDbZeA/company-logo_200_200/company-logo_200_200/0/1714527868125/tafe_nsw_logo?e=1763596800&v=beta&t=sEh49SqzpM4iuBZo4S_OwuT8kebcl_AfCQEyyipnVAw" alt="TAFE NSW Logo" class="w-20 h-20 object-contain mx-auto">
+        <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="text-lg font-bold text-slate-900">Solution Architecture</h3>
+            <p class="mt-3 text-slate-700">
+              Solution design, HLD, LLD, design patterns, technology roadmaps, business requirements translation,
+              target-state architecture, and enterprise architecture alignment.
+            </p>
           </div>
-          <div class="flex-grow">
-            <h3 class="text-xl font-bold text-gray-900">Senior Identity Engineer</h3>
-            <p class="text-md font-semibold text-gray-700">TAFE NSW · Contract</p>
-            <p class="text-sm text-gray-500 mt-1">Nov 2024 - Sep 2025 · Sydney, NSW</p>
-            <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-              <li>Leading a team of six Identity Administrators to automate user provisioning, application deployment, and security audits with PowerShell.</li>
-              <li>Directing the strategic planning and enhancement of Identity and Access Management (IAM) systems to ensure regulatory compliance and support scalable growth.</li>
-              <li>Mentoring junior team members and collaborating with business stakeholders to align IT initiatives with company objectives.</li>
-            </ul>
+
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="text-lg font-bold text-slate-900">IAM & Security</h3>
+            <p class="mt-3 text-slate-700">
+              Microsoft Entra ID, Active Directory, PAM, RBAC, SSO, MFA, Conditional Access, Zero Trust, and security-focused service delivery.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="text-lg font-bold text-slate-900">Infrastructure & Cloud</h3>
+            <p class="mt-3 text-slate-700">
+              Azure, IaaS/PaaS, Microsoft Intune, Windows Autopilot, Windows Server, Microsoft 365, collaboration platforms, and enterprise hosting.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="text-lg font-bold text-slate-900">Automation & Delivery</h3>
+            <p class="mt-3 text-slate-700">
+              PowerShell, Bash, JSON/YAML, CI/CD, process automation, and operational standardisation.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="text-lg font-bold text-slate-900">ITSM & Insights</h3>
+            <p class="mt-3 text-slate-700">
+              ServiceNow ITSM / CMDB, Splunk SIEM, Power BI, Tableau, Jira, Confluence, Cherwell, incident and change management.
+            </p>
+          </div>
+
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="text-lg font-bold text-slate-900">Ways of Working</h3>
+            <p class="mt-3 text-slate-700">
+              ITIL v4, Agile/Scrum, risk management, business continuity planning, stakeholder engagement, and mentoring.
+            </p>
           </div>
         </div>
 
-        <!-- Clyde & Co -->
-        <div class="card p-6 md:p-8 flex flex-col sm:flex-row gap-6">
-          <div class="flex-shrink-0">
-            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQEyVakMzrgOVw/company-logo_200_200/company-logo_200_200/0/1720538156920/clydeco_logo?e=1763596800&v=beta&t=02WYF0FCeNemGfzai3iQS3AFaXlm8gDNKvgq-SLk37E" alt="Clyde & Co Logo" class="w-20 h-20 object-contain mx-auto">
-          </div>
-          <div class="flex-grow">
-            <h3 class="text-xl font-bold text-gray-900">Clyde & Co</h3>
-            <p class="text-md font-semibold text-gray-700">Full-time · 2 yrs 10 mos</p>
-            <p class="text-sm text-gray-500 mt-1">Sydney, NSW · Hybrid</p>
-            <div class="mt-6 space-y-6 border-l-2 border-indigo-100 pl-4">
-              <div>
-                <h4 class="font-bold text-gray-800">Senior Application Operations Analyst</h4>
-                <p class="text-sm text-gray-500">Nov 2022 - Aug 2024 · 1 yr 10 mos</p>
-                <ul class="mt-2 list-disc list-inside text-gray-700 space-y-2">
-                  <li>Served as the APAC technical lead for the iManage cloud migration, achieving a seamless transition with **zero downtime** and **100% stakeholder satisfaction**.</li>
-                  <li>Administered Microsoft Intune for 600+ devices, implementing MDM/MAM policies that **reduced security incidents by 20%**.</li>
-                  <li>Deployed Microsoft Entra ID with Conditional Access and MFA, **strengthening overall security by 50%**.</li>
-                  <li>Managed team queues in ServiceNow, improving ticket **response times by 40%**.</li>
-                </ul>
-              </div>
-              <div>
-                <h4 class="font-bold text-gray-800">Application Operations Analyst</h4>
-                <p class="text-sm text-gray-500">Nov 2021 - Nov 2022 · 1 yr 1 mo</p>
-                 <ul class="mt-2 list-disc list-inside text-gray-700 space-y-2">
-                  <li>Managed and optimized Microsoft Intune, deploying policies across hundreds of corporate devices to ensure security and compliance.</li>
-                  <li>Provided critical support for business applications, contributing to a high-performance culture and team skill enhancement.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="mt-10 flex flex-wrap justify-center gap-3">
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Microsoft Entra ID</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Active Directory</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Intune</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Windows Autopilot</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">PowerShell</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Azure</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">ServiceNow</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Splunk</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Power BI</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Tableau</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Jira</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Confluence</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Bitbucket</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">Bamboo</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">iManage</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">WordPress</span>
+          <span class="rounded-full bg-slate-200 px-4 py-2 text-sm font-medium text-slate-800">HTML5</span>
         </div>
-
-        <!-- Sonic Healthcare -->
-        <div class="card p-6 md:p-8 flex flex-col sm:flex-row gap-6">
-          <div class="flex-shrink-0">
-            <img src="https://media.licdn.com/dms/image/v2/D560BAQFM2J3VbHaWTA/company-logo_200_200/B56ZXpBCoEGQAI-/0/1743371119766/sonic_healthcare_logo?e=1763596800&v=beta&t=qe75LeVix4jvrgtLyWk6BZRhpred9vKPzfqFug0lxiQ" alt="Sonic Healthcare Logo" class="w-20 h-20 object-contain mx-auto">
-          </div>
-          <div class="flex-grow">
-            <h3 class="text-xl font-bold text-gray-900">IT Team Lead</h3>
-            <p class="text-md font-semibold text-gray-700">Sonic Healthcare · Contract</p>
-            <p class="text-sm text-gray-500 mt-1">Aug 2021 - Nov 2021 · 4 mos · Macquarie Park, NSW</p>
-            <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-              <li>Supervised a team to implement Veeam backup solutions, establishing robust business continuity with an **RTO of 4 hours** and **RPO of 1 hour**.</li>
-              <li>Led the migration of 10 years of ticketing data from Cherwell to ServiceNow, ensuring **100% data integrity** and minimal downtime.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- AIG -->
-        <div class="card p-6 md:p-8 flex flex-col sm:flex-row gap-6">
-          <div class="flex-shrink-0">
-            <img src="https://media.licdn.com/dms/image/v2/D4E0BAQHZ4uukTAzbCg/company-logo_200_200/company-logo_200_200/0/1719790136202/aig_logo?e=1763596800&v=beta&t=h5CaVzWYam08A2M0iADM6QT2wMcXiGnS-T0d6ysSEtk" alt="AIG Logo" class="w-20 h-20 object-contain mx-auto">
-          </div>
-          <div class="flex-grow">
-            <h3 class="text-xl font-bold text-gray-900">Infrastructure Services Engineer</h3>
-            <p class="text-md font-semibold text-gray-700">AIG · Full-time</p>
-            <p class="text-sm text-gray-500 mt-1">Jun 2018 - Aug 2021 · 3 yrs 3 mos · Sydney, NSW</p>
-            <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-              <li>Directed a team to design and configure Windows Autopilot profiles, automating device setup and **reducing deployment time by 60%**.</li>
-              <li>Led the migration of 400 users from Windows 7 to Windows 10 across four sites with **zero business disruption**.</li>
-              <li>Administered Privileged Access Management (PAM) using Arcon PAM and Delinea to mitigate security risks.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- SocialGen -->
-        <div class="card p-6 md:p-8 flex flex-col sm:flex-row gap-6">
-          <div class="flex-shrink-0">
-             <img src="https://media.licdn.com/dms/image/v2/C510BAQEkzZe9bcO4cw/company-logo_200_200/company-logo_200_200/0/1631424581346?e=1763596800&v=beta&t=pihJ7XaWlqzYVzW8KA1OuJDXTwilXaUVJH3jDGaT7dc" alt="SocialGen Logo" class="w-20 h-20 object-contain mx-auto rounded-md">
-          </div>
-          <div class="flex-grow">
-            <h3 class="text-xl font-bold text-gray-900">IT Engineer</h3>
-            <p class="text-md font-semibold text-gray-700">SocialGen · Full-time</p>
-            <p class="text-sm text-gray-500 mt-1">Jul 2015 - Jul 2018 · 3 yrs 1 mo · Surry Hills, NSW</p>
-            <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
-              <li>Managed a team of developers to launch the company website using WordPress and HTML5, resulting in a **25% increase in web traffic**.</li>
-              <li>Oversaw all IT operations, including system maintenance, process automation, and infrastructure optimization to support business growth.</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-16 bg-white rounded-lg card">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="text-3xl md:text-4xl section-title text-gray-800 mb-6">Education</h2>
-            <div class="inline-block text-left">
-                <h3 class="text-xl font-bold text-gray-900">University of Newcastle</h3>
-                <p class="text-md font-semibold text-indigo-600">Master of Business Administration & Information Technology</p>
-                <p class="text-sm text-gray-500 mt-1">Completed July 2014</p>
+    <!-- Experience -->
+    <section id="experience" class="py-12 sm:py-16">
+      <div class="mx-auto max-w-5xl">
+        <h2 class="section-title text-center text-3xl font-bold text-slate-900 sm:text-4xl">Professional Experience</h2>
+
+        <div class="mt-12 space-y-8">
+          <article class="card p-6 sm:p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">Senior Domain Architect</h3>
+                <p class="mt-1 text-base font-semibold text-brand-700">Department of Planning, Housing and Infrastructure (DPHI), NSW Government</p>
+              </div>
+              <p class="text-sm font-medium text-slate-500">October 2025 – Present</p>
             </div>
+            <ul class="mt-5 list-disc space-y-2 pl-5 text-slate-700">
+              <li>Develop and deliver solution architectures, HLDs, and detailed technical designs for complex ICT infrastructure projects.</li>
+              <li>Translate detailed business requirements into scalable technology solutions aligned to governance and enterprise architecture frameworks.</li>
+              <li>Produce design patterns, standards, roadmaps, and options papers across client computing, collaboration, identity, and cloud hosting platforms.</li>
+              <li>Collaborate with enterprise architecture and information security teams to ensure alignment with government standards and compliance requirements.</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 sm:p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">Senior Identity Engineer</h3>
+                <p class="mt-1 text-base font-semibold text-brand-700">TAFE NSW</p>
+              </div>
+              <p class="text-sm font-medium text-slate-500">November 2024 – September 2025</p>
+            </div>
+            <ul class="mt-5 list-disc space-y-2 pl-5 text-slate-700">
+              <li>Led a team of six Identity Administrators automating user provisioning, application deployment, and security audits with PowerShell.</li>
+              <li>Directed IAM design and enhancement to support regulatory compliance and organisational growth.</li>
+              <li>Implemented RBAC and SSO frameworks across enterprise applications to reduce unauthorised access risk.</li>
+              <li>Supported proactive cybersecurity operations and SIEM alerting via Splunk while maintaining 99.9% system availability.</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 sm:p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">Senior Application Operations Analyst</h3>
+                <p class="mt-1 text-base font-semibold text-brand-700">Clyde & Co</p>
+              </div>
+              <p class="text-sm font-medium text-slate-500">November 2021 – August 2024</p>
+            </div>
+            <ul class="mt-5 list-disc space-y-2 pl-5 text-slate-700">
+              <li>Led the APAC iManage cloud migration across multiple sites with zero downtime and 100% stakeholder satisfaction.</li>
+              <li>Administered and optimised Intune for 600+ endpoints, reducing security incidents by 20%.</li>
+              <li>Deployed Microsoft Entra ID with Conditional Access and MFA, strengthening security posture by 50%.</li>
+              <li>Managed the ServiceNow ITSM queue and improved mean time to resolve by 40%.</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 sm:p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">IT Team Lead</h3>
+                <p class="mt-1 text-base font-semibold text-brand-700">Sonic Healthcare</p>
+              </div>
+              <p class="text-sm font-medium text-slate-500">August 2021 – November 2021</p>
+            </div>
+            <ul class="mt-5 list-disc space-y-2 pl-5 text-slate-700">
+              <li>Supervised engineers implementing Veeam Backup & Replication with an RTO of 4 hours and RPO of 1 hour.</li>
+              <li>Led migration of ten years of ticketing data from Cherwell to ServiceNow with 100% data integrity.</li>
+              <li>Applied Agile/Scrum delivery practices using Jira and Confluence.</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 sm:p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">Infrastructure Services Engineer</h3>
+                <p class="mt-1 text-base font-semibold text-brand-700">AIG Australia</p>
+              </div>
+              <p class="text-sm font-medium text-slate-500">June 2018 – August 2021</p>
+            </div>
+            <ul class="mt-5 list-disc space-y-2 pl-5 text-slate-700">
+              <li>Led Windows Autopilot profile design, reducing device deployment time by 60%.</li>
+              <li>Managed migration of 400 users from Windows 7 to Windows 10 across four sites with zero disruption.</li>
+              <li>Automated workflows with PowerShell and administered Windows Server environments including AD, DNS, DHCP, and Group Policy.</li>
+              <li>Managed PAM controls with Arcon PAM and Delinea Secret Server.</li>
+            </ul>
+          </article>
+
+          <article class="card p-6 sm:p-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-900">IT Engineer</h3>
+                <p class="mt-1 text-base font-semibold text-brand-700">SocialGen</p>
+              </div>
+              <p class="text-sm font-medium text-slate-500">July 2015 – July 2018</p>
+            </div>
+            <ul class="mt-5 list-disc space-y-2 pl-5 text-slate-700">
+              <li>Led developers to launch the corporate website using WordPress and HTML5, increasing web traffic by 25%.</li>
+              <li>Managed IT operations, MDM solutions, CI/CD-related workflows, and change management processes.</li>
+              <li>Applied Agile project delivery techniques using Jira and Trello.</li>
+            </ul>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- CV Download Section -->
-    <section id="cv-download" class="py-16 text-center">
-        <h2 class="text-3xl md:text-4xl text-gray-800 mb-6">My Resume</h2>
-        <p class="max-w-2xl mx-auto text-gray-600 mb-8">
-            For a more detailed overview of my technical projects and accomplishments, please feel free to download my full resume.
+    <!-- Achievements -->
+    <section id="achievements" class="py-12 sm:py-16">
+      <div class="card px-6 py-10 sm:px-8">
+        <h2 class="section-title text-center text-3xl font-bold text-slate-900 sm:text-4xl">Key Achievements</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold text-slate-900">Security & Endpoint Management</h3>
+            <p class="mt-2 text-slate-700">
+              Reduced security incidents by 20% and strengthened security posture by 50% through Microsoft Entra ID and Intune deployment.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold text-slate-900">Cloud Migration</h3>
+            <p class="mt-2 text-slate-700">
+              Delivered an iManage cloud migration across APAC with zero downtime and 100% stakeholder satisfaction.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold text-slate-900">Service Delivery</h3>
+            <p class="mt-2 text-slate-700">
+              Improved ITSM response times by 40% through ServiceNow queue optimisation and escalation management.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 p-6">
+            <h3 class="font-bold text-slate-900">Automation & Continuity</h3>
+            <p class="mt-2 text-slate-700">
+              Reduced device deployment time by 60% through Windows Autopilot automation and maintained 100% data integrity during platform migration work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-12 sm:py-16">
+      <div class="card px-6 py-10 text-center sm:px-8">
+        <h2 class="section-title text-3xl font-bold text-slate-900 sm:text-4xl">Education</h2>
+        <div class="mt-8">
+          <h3 class="text-2xl font-bold text-slate-900">University of Newcastle, NSW</h3>
+          <p class="mt-2 text-lg font-semibold text-brand-700">Master of Business Administration (MBA) & Information Technology</p>
+          <p class="mt-2 text-slate-500">Completed July 2014</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Download -->
+    <section id="cv-download" class="py-12 text-center sm:py-16">
+      <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Resume</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-slate-600">
+        Download my latest resume for a detailed overview of solution architecture, infrastructure, IAM, cloud, and delivery experience.
+      </p>
+      <a
+        href="DanielWu_Resume.docx"
+        download="DanielWu_Resume.docx"
+        class="mt-8 inline-flex items-center rounded-lg bg-brand-600 px-8 py-4 font-semibold text-white shadow-soft transition hover:bg-brand-700"
+      >
+        Download Resume
+      </a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-6 rounded-3xl bg-slate-900 py-12 text-white sm:mt-10 sm:py-16">
+      <div class="mx-auto max-w-4xl px-4 text-center">
+        <h2 class="section-title text-3xl font-bold sm:text-4xl">Get In Touch</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-slate-300">
+          If you'd like to discuss architecture, infrastructure strategy, IAM, or transformation work, feel free to reach out.
         </p>
-        <a href="DanielWu_Resume.docx" download="DanielWu_Resume.docx" class="inline-block px-8 py-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors">
-            <i class="fas fa-download mr-2"></i> Download Resume
-        </a>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800 text-white rounded-lg mt-16">
-      <div class="max-w-4xl mx-auto text-center px-4">
-        <h2 class="text-3xl md:text-4xl section-title mb-8">Get In Touch</h2>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-          <a href="mailto:dichao.wu@icloud.com" class="flex items-center gap-3 hover:text-indigo-300 transition-colors">
-            <i class="fas fa-envelope text-2xl"></i>
-            <span class="text-lg">dichao.wu@icloud.com</span>
+        <div class="mt-10 grid gap-4 md:grid-cols-3">
+          <a href="mailto:dichao.wu@icloud.com" class="rounded-2xl border border-slate-700 bg-slate-800/60 p-5 transition hover:border-brand-500 hover:bg-slate-800">
+            <p class="text-sm uppercase tracking-wide text-slate-400">Email</p>
+            <p class="mt-2 break-all font-semibold text-white">dichao.wu@icloud.com</p>
           </a>
-          <a href="tel:0410186216" class="flex items-center gap-3 hover:text-indigo-300 transition-colors">
-            <i class="fas fa-phone text-2xl"></i>
-            <span class="text-lg">0410 186 216</span>
+
+          <a href="tel:0410186216" class="rounded-2xl border border-slate-700 bg-slate-800/60 p-5 transition hover:border-brand-500 hover:bg-slate-800">
+            <p class="text-sm uppercase tracking-wide text-slate-400">Phone</p>
+            <p class="mt-2 font-semibold text-white">0410 186 216</p>
           </a>
-          <a href="https://www.linkedin.com/in/danielwuaustralia/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-indigo-300 transition-colors">
-            <i class="fab fa-linkedin text-2xl"></i>
-            <span class="text-lg">LinkedIn Profile</span>
+
+          <a
+            href="https://www.linkedin.com/in/danielwuaustralia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-2xl border border-slate-700 bg-slate-800/60 p-5 transition hover:border-brand-500 hover:bg-slate-800"
+          >
+            <p class="text-sm uppercase tracking-wide text-slate-400">LinkedIn</p>
+            <p class="mt-2 font-semibold text-white">linkedin.com/in/danielwuaustralia</p>
           </a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="text-center text-sm text-gray-500 py-8">
-    <p>© 2025 DiChao (Daniel) Wu. All rights reserved.</p>
+  <footer class="px-4 py-8 text-center text-sm text-slate-500">
+    <p>© 2026 DiChao (Daniel) Wu. All rights reserved.</p>
   </footer>
 
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        const isOpen = !mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        menuBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+
+      mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          menuBtn.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  </script>
 </body>
 </html>
